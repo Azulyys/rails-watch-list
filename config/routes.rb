@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: "pages#home"
+  root to: "lists#index"
   # get 'pages/home'
 
   resources :lists, only:[:create, :index, :new, :show]  do
